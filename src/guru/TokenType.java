@@ -1,0 +1,24 @@
+package guru;
+
+enum TokenType {
+    // no op
+    PLEASE,
+
+    LEFT_PAREN, RIGHT_PAREN, LEFT_BRACE, RIGHT_BRACE, QUEST,
+    COMMA, DOT, MINUS, PLUS, SEMICOLON, SLASH, STAR, COLON,
+    
+    // One or two character tokens.
+    BANG, BANG_EQUAL,
+    EQUAL, EQUAL_EQUAL,
+    GREATER, GREATER_EQUAL,
+    LESS, LESS_EQUAL,
+
+    // Literals.
+    IDENTIFIER, STRING, NUMBER,
+
+    // Keywords.
+    AND, STRUCTURE, RECORD, ELSE, FALSE, FUN, IF, NOTHING, VOID, OR,
+    SUPER, THIS, TRUE, VAR, CONST, STATIC, WHILE, FROM, WITH, EXPORT,
+
+    EOF
+}

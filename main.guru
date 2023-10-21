@@ -1,0 +1,18 @@
+export const Kek = class {
+    fun new(me, lol) {
+        me.secret = lol;
+    };
+    fun a() 12;
+    static fun print() runtime.print("here");
+    fun lol(n) n.secret;
+};
+
+export const ExtKek = class from Kek {
+    fun lol(this) "no secrets!";
+};
+
+class Kek2 from Kek {
+    static fun lol(n) n;
+};
+
+runtime.print(Kek2(1).lol(1));
